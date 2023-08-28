@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">layout</string>
+    <string name="inventario_icono">inventario</string>
+    <string name="facturas_txt">Facturas</string>
+    <string name="agregar_txt">Agregar</string>
+    <string name="salir_txt">Salir</string>
+    <string name="valor_inventario_txt">Inventario actual</string>
+    <string name="title_activity_profile">profileActivity</string>
+    <string name="nombre_perfil_txt">Nombres</string>
+    <string name="Place_holder_txt">place holder</string>
+    <string name="Apellidos_perfil_txt">Apellidos</string>
+    <string name="correo_txt">Correo</string>
+</resources>
