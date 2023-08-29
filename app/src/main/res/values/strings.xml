@@ -10,4 +10,16 @@
     <string name="Place_holder_txt">place holder</string>
     <string name="Apellidos_perfil_txt">Apellidos</string>
     <string name="correo_txt">Correo</string>
+    <string name="cargo_perfil_txt">Cargo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="telefono_txt">Telefono</string>
+    <string name="fecha_nacimiento_txt">Fecha de nacimiento</string>
+    <string name="guardar_cambios_txt">Guardar cambios</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="historial_facturas_txt" >Historial facturas</string>
+    <string name="fecha_txt">Fecha</string>
+    <string name="Hora_txt">Hora</string>
+    <string name="Costo_txt">Costo</string>
+    <string name="vista_txt">vista</string>
 </resources>
