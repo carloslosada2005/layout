@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.theme.Mercancia">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="313dp"
+            android:layout_gravity="center|top"
+            app:srcCompat="@drawable/agregar_archivo" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:gravity="center|top"
+                android:text="@string/descripcion_txt"
+                android:textSize="34sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:gravity="center|top"
+                android:text="solo es una prueba, de lo que el contenido puede alamcernar dependiendo de la capacidad de la pantalla de cada dispositivo, de esta manera nada es final solo es una manera de representar el texto que puede contener cada cuadro de descripcion"
+                android:textSize="20sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="409dp"
+            android:layout_height="386dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:text="precio: placeholder"
+                    android:textSize="34sp"
+                    tools:layout_editor_absoluteX="61dp" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|left"
+                    android:text="Editar"
+                    android:textSize="34sp"
+                    tools:layout_editor_absoluteY="321dp" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:text="Eliminar"
+                    android:textSize="34sp"
+                    tools:layout_editor_absoluteX="235dp"
+                    tools:layout_editor_absoluteY="321dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton7"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toTopOf="@+id/button3"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13"
+                    app:srcCompat="@drawable/agregar" />
+
+                <ImageButton
+                    android:id="@+id/imageButton9"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toTopOf="@+id/button4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13"
+                    app:srcCompat="@drawable/agregar" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline4"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintGuide_begin="194dp"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
