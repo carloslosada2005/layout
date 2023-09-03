@@ -57,6 +57,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="#00FFFFFF"
+        android:onClick="mer"
         android:scaleType="fitCenter"
         android:src="@drawable/movimientos"
         app:layout_constraintBottom_toBottomOf="@+id/menubarbottom"
@@ -243,11 +244,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="0"
+        android:text="2000"
         android:textSize="44sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inventatio_main_txt" />
+
+    <CheckBox
+        android:id="@+id/mostrar_dinero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mostrar_dinero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

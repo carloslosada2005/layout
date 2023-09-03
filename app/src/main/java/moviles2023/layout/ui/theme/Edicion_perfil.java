@@ -7,7 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.widget.Button;
+import android.widget.EditText;
 import moviles2023.layout.R;
 
 /**
@@ -25,6 +26,8 @@ public class Edicion_perfil extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+
 
     public Edicion_perfil() {
         // Required empty public constructor
@@ -48,13 +51,38 @@ public class Edicion_perfil extends Fragment {
         return fragment;
     }
 
+
+    EditText nombre,apellido,correo,cargo,telefono,fecha;
+    Button guardar;
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
+        nombre = (EditText) getView().findViewById(R.id.nombre_editable);
+        apellido = (EditText) getView().findViewById(R.id.apellido_editable);
+        correo = (EditText) getView().findViewById(R.id.correo_editable);
+        cargo = (EditText) getView().findViewById(R.id.cargo_editable);
+        telefono = (EditText) getView().findViewById(R.id.telefono_editable);
+        fecha = (EditText) getView().findViewById(R.id.fecha_nac_editable);
+
+        guardar = (Button)  getView().findViewById(R.id.guardar_boton);
+
+        guardar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                nombre.setClickable(true);
+                nombre.setFocusable(false);
+                nombre.setInputType(0);
+                nombre.setTextIsSelectable(false);
+
+            }
+        });
+
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override

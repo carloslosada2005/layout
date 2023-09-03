@@ -1,13 +1,13 @@
 <resources>
-    <string name="app_name">layout</string>
+    <string name="app_name" translatable="false">layout</string>
     <string name="inventario_icono">inventario</string>
     <string name="facturas_txt">Facturas</string>
     <string name="agregar_txt">Agregar</string>
     <string name="salir_txt">Salir</string>
     <string name="valor_inventario_txt">Inventario actual</string>
-    <string name="title_activity_profile">profileActivity</string>
+    <string name="title_activity_profile" translatable="false">profileActivity</string>
     <string name="nombre_perfil_txt">Nombres</string>
-    <string name="Place_holder_txt">place holder</string>
+    <string name="Place_holder_txt" translatable="false">place holder</string>
     <string name="Apellidos_perfil_txt">Apellidos</string>
     <string name="correo_txt">Correo</string>
     <string name="cargo_perfil_txt">Cargo</string>
@@ -16,11 +16,14 @@
     <string name="fecha_nacimiento_txt">Fecha de nacimiento</string>
     <string name="guardar_cambios_txt">Guardar cambios</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="historial_facturas_txt">Historial facturas</string>
     <string name="fecha_txt">Fecha</string>
     <string name="Hora_txt">Hora</string>
     <string name="Costo_txt">Costo</string>
     <string name="vista_txt">vista</string>
     <string name="descripcion_txt">Descripcion</string>
+    <string name="mostrar_dinero">mostrar dinero</string>
+    <string name="activo_txt">Activo</string>
+    <string name="suspendido_txt">Suspendido</string>
+    <string name="ausente_txt">Ausente</string>
 </resources>

@@ -12,10 +12,11 @@
 
         <ImageView
             android:id="@+id/imageView10"
-            android:layout_width="wrap_content"
-            android:layout_height="313dp"
+            android:layout_width="0dp"
+            android:layout_height="232dp"
             android:layout_gravity="center|top"
-            app:srcCompat="@drawable/agregar_archivo" />
+            app:srcCompat="@drawable/agregar_archivo"
+            tools:layout_editor_absoluteX="2dp" />
 
         <FrameLayout
             android:id="@+id/frameLayout"
@@ -56,7 +57,7 @@
 
         <FrameLayout
             android:layout_width="409dp"
-            android:layout_height="386dp"
+            android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -73,33 +74,68 @@
                     android:layout_gravity="center|top"
                     android:text="precio: placeholder"
                     android:textSize="34sp"
-                    tools:layout_editor_absoluteX="61dp" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
 
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|left"
-                    android:text="Editar"
-                    android:textSize="34sp"
-                    tools:layout_editor_absoluteY="321dp" />
+                <ImageView
+                    android:id="@+id/menubarbottom"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/bgbar_main" />
 
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|right"
-                    android:text="Eliminar"
-                    android:textSize="34sp"
-                    tools:layout_editor_absoluteX="235dp"
-                    tools:layout_editor_absoluteY="321dp" />
+                <ImageButton
+                    android:id="@+id/boton_perfil"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="per"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/usuario"
+                    app:layout_constraintBottom_toBottomOf="@+id/menubarbottom"
+                    app:layout_constraintEnd_toEndOf="@+id/menubarbottom"
+                    app:layout_constraintStart_toEndOf="@+id/boton_inicio"
+                    app:layout_constraintTop_toTopOf="@+id/menubarbottom"
+                    app:tint="@color/white" />
+
+                <ImageButton
+                    android:id="@+id/boton_movimiento"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="#00FFFFFF"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/movimientos"
+                    app:layout_constraintBottom_toBottomOf="@+id/menubarbottom"
+                    app:layout_constraintEnd_toStartOf="@+id/boton_inicio"
+                    app:layout_constraintStart_toStartOf="@+id/menubarbottom"
+                    app:layout_constraintTop_toTopOf="@+id/menubarbottom"
+                    app:tint="@color/white" />
+
+                <ImageButton
+                    android:id="@+id/boton_inicio"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="in"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="@+id/menubarbottom"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/menubarbottom"
+                    app:srcCompat="@drawable/hogar"
+                    app:tint="@color/white" />
 
                 <ImageButton
                     android:id="@+id/imageButton7"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:scaleType="fitCenter"
-                    app:layout_constraintBottom_toTopOf="@+id/button3"
+                    app:layout_constraintBottom_toTopOf="@+id/menubarbottom"
                     app:layout_constraintEnd_toStartOf="@+id/guideline4"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView13"
@@ -110,7 +146,7 @@
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:scaleType="fitCenter"
-                    app:layout_constraintBottom_toTopOf="@+id/button4"
+                    app:layout_constraintBottom_toTopOf="@+id/menubarbottom"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/guideline4"
                     app:layout_constraintTop_toBottomOf="@+id/textView13"

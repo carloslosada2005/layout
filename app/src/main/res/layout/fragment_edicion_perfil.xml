@@ -43,7 +43,7 @@
         android:src="@drawable/usuario" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/nombre_editable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView"
@@ -53,7 +53,7 @@
         android:text="@string/nombre_perfil_txt" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/apellido_editable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView"
@@ -63,7 +63,7 @@
         android:text="@string/Apellidos_perfil_txt" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/cargo_editable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView"
@@ -73,7 +73,7 @@
         android:text="@string/cargo_perfil_txt" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/correo_editable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView"
@@ -83,7 +83,7 @@
         android:text="@string/correo_txt" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/telefono_editable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView"
@@ -93,7 +93,7 @@
         android:text="@string/telefono_txt" />
 
     <EditText
-        android:id="@+id/editTextDate2"
+        android:id="@+id/fecha_nac_editable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView"
@@ -103,10 +103,10 @@
         android:text="@string/fecha_nacimiento_txt" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/guardar_boton"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_below="@+id/editTextDate2"
+        android:layout_below="@+id/fecha_nac_editable"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="124dp"
         android:layout_marginEnd="1dp"

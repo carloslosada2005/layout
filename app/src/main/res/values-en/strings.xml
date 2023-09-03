@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="inventario_icono">inventory</string>
+    <string name="facturas_txt">bills</string>
+    <string name="agregar_txt">add</string>
+    <string name="salir_txt">exit</string>
+    <string name="valor_inventario_txt">current inventory</string>
+    <string name="nombre_perfil_txt">names</string>
+    <string name="Apellidos_perfil_txt">Last Names</string>
+    <string name="correo_txt">email</string>
+    <string name="cargo_perfil_txt">charge</string>
+    <string name="telefono_txt">telephone</string>
+    <string name="fecha_nacimiento_txt">birth day</string>
+    <string name="guardar_cambios_txt">save changes</string>
+    <string name="historial_facturas_txt">bills history</string>
+    <string name="fecha_txt">Date</string>
+    <string name="Hora_txt">Hour</string>
+    <string name="Costo_txt">Cost</string>
+    <string name="vista_txt">View</string>
+    <string name="descripcion_txt">Description</string>
+    <string name="mostrar_dinero">Show money</string>
+    <string name="activo_txt">Active</string>
+    <string name="suspendido_txt">Suspended</string>
+    <string name="ausente_txt">Absent</string>
+</resources>
