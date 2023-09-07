@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <ImageView
+        android:id="@+id/menubartop"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bgtop_main" />
+
+    <ImageView
+        android:id="@+id/top_descripcion"
+        android:layout_width="228dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_items_main"
+        app:tint="@color/blue_charcoal" />
+
+    <ImageView
+        android:id="@+id/menubarbottom"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bgbar_main" />
+
+    <ImageButton
+        android:id="@+id/boton_perfil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#00FFFFFF"
+        android:onClick="in"
+        android:scaleType="fitCenter"
+        android:src="@drawable/usuario"
+        app:layout_constraintBottom_toBottomOf="@+id/menubarbottom"
+        app:layout_constraintEnd_toEndOf="@+id/menubarbottom"
+        app:layout_constraintStart_toEndOf="@+id/boton_inicio"
+        app:layout_constraintTop_toTopOf="@+id/menubarbottom"
+        app:tint="@color/white" />
+
+    <ImageButton
+        android:id="@+id/boton_movimiento"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#00FFFFFF"
+        android:onClick="mer"
+        android:scaleType="fitCenter"
+        android:src="@drawable/movimientos"
+        app:layout_constraintBottom_toBottomOf="@+id/menubarbottom"
+        app:layout_constraintEnd_toStartOf="@+id/boton_inicio"
+        app:layout_constraintStart_toStartOf="@+id/menubarbottom"
+        app:layout_constraintTop_toTopOf="@+id/menubarbottom"
+        app:tint="@color/white" />
+
+    <ImageButton
+        android:id="@+id/boton_inicio"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/menubarbottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/menubarbottom"
+        app:srcCompat="@drawable/hogar"
+        app:tint="@color/white" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.47" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.53" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="396dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_holder1"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="240dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="45dp"
+        app:cardElevation="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/inventario_icono"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:background="#00FFFFFF"
+            android:scaleType="fitCenter"
+            android:src="@drawable/libro_marcador" />
+
+        <TextView
+            android:id="@+id/inventario_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom|center"
+            android:gravity="top"
+            android:text="@string/inventario_icono"
+            android:textSize="24sp"
+            tools:text="@string/inventario_icono" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_holder2"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="240dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="45dp"
+        app:cardElevation="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/facturas_icono"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:background="#00FFFFFF"
+            android:scaleType="fitCenter"
+            android:src="@drawable/archivo_factura_dolar" />
+
+        <TextView
+            android:id="@+id/facturas_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom|center"
+            android:text="@string/facturas_txt"
+            android:textSize="24sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_holder4"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="45dp"
+        app:cardElevation="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/menubarbottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline3">
+
+        <ImageButton
+            android:id="@+id/salir_icono"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:background="#00FFFFFF"
+            android:scaleType="fitCenter"
+            android:src="@drawable/salir" />
+
+        <TextView
+            android:id="@+id/salir_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text="@string/salir_txt"
+            android:textSize="24sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_holder3"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="45dp"
+        app:cardElevation="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/menubarbottom"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3">
+
+        <ImageButton
+            android:id="@+id/agregar_icono"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:background="#00FFFFFF"
+            android:scaleType="fitCenter"
+            android:src="@drawable/agregar" />
+
+        <TextView
+            android:id="@+id/agregar_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom|center"
+            android:text="@string/agregar_txt"
+            android:textSize="24sp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/inventatio_main_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/valor_inventario_txt"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cantidad_main_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="2000"
+        android:textSize="44sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inventatio_main_txt" />
+
+    <CheckBox
+        android:id="@+id/mostrar_dinero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mostrar_dinero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

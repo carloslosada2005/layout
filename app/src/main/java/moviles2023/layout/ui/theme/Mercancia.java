@@ -8,7 +8,6 @@ import android.view.View;
 
 import moviles2023.layout.MainActivity;
 import moviles2023.layout.R;
-import moviles2023.layout.perfilActivity;
 
 public class Mercancia extends AppCompatActivity {
 

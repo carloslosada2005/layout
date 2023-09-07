@@ -54,7 +54,7 @@
         app:srcCompat="@drawable/usuario" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_edit"
         android:layout_width="236dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
