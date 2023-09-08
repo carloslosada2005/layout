@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_columnSpan="3"
+    tools:context=".Historial">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/historial_dimention_txt"
+        android:src="@drawable/bgbar_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp"
+        android:divider="@drawable/separador"
+        android:showDividers="middle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_circle">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="@dimen/historial_dimention_txt"
+                android:layout_height="@dimen/historial_dimention_txt"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/movimientos" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/texto_corto_txt"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/editTextDate"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:hint="@string/Hora_txt"
+                android:text="@string/Hora_txt" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="@dimen/historial_dimention_txt"
+                android:layout_height="@dimen/historial_dimention_txt"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icons8_basura" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_circle">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="@dimen/historial_dimention_txt"
+                android:layout_height="@dimen/historial_dimention_txt"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/movimientos" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/texto_corto_txt"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/editTextDate"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:hint="@string/Hora_txt"
+                android:text="@string/Hora_txt" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="@dimen/historial_dimention_txt"
+                android:layout_height="@dimen/historial_dimention_txt"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icons8_basura" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_circle">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="@dimen/historial_dimention_txt"
+                android:layout_height="@dimen/historial_dimention_txt"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/movimientos" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/texto_corto_txt"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/editTextDate"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:hint="@string/Hora_txt"
+                android:text="@string/Hora_txt" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="@dimen/historial_dimention_txt"
+                android:layout_height="@dimen/historial_dimention_txt"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icons8_basura" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_circle">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="@dimen/historial_dimention_txt"
+                android:layout_height="@dimen/historial_dimention_txt"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/movimientos" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/texto_corto_txt"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/editTextDate"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:hint="@string/Hora_txt"
+                android:text="@string/Hora_txt" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="@dimen/historial_dimention_txt"
+                android:layout_height="@dimen/historial_dimention_txt"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icons8_basura" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_circle">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="@dimen/historial_dimention_txt"
+                android:layout_height="@dimen/historial_dimention_txt"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/movimientos" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/texto_corto_txt"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/editTextDate"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:hint="@string/Hora_txt"
+                android:text="@string/Hora_txt" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="@dimen/historial_dimention_txt"
+                android:layout_height="@dimen/historial_dimention_txt"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icons8_basura" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_circle">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="@dimen/historial_dimention_txt"
+                android:layout_height="@dimen/historial_dimention_txt"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/movimientos" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/texto_corto_txt"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/editTextDate"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:hint="@string/Hora_txt"
+                android:text="@string/Hora_txt" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="@dimen/historial_dimention_txt"
+                android:layout_height="@dimen/historial_dimention_txt"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icons8_basura" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_circle">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="@dimen/historial_dimention_txt"
+                android:layout_height="@dimen/historial_dimention_txt"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/movimientos" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/texto_corto_txt"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/editTextDate"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:hint="@string/Hora_txt"
+                android:text="@string/Hora_txt" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="@dimen/historial_dimention_txt"
+                android:layout_height="@dimen/historial_dimention_txt"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icons8_basura" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_circle">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="@dimen/historial_dimention_txt"
+                android:layout_height="@dimen/historial_dimention_txt"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/movimientos" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/texto_corto_txt"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/editTextDate"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:hint="@string/Hora_txt"
+                android:text="@string/Hora_txt" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="@dimen/historial_dimention_txt"
+                android:layout_height="@dimen/historial_dimention_txt"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icons8_basura" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_circle">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="@dimen/historial_dimention_txt"
+                android:layout_height="@dimen/historial_dimention_txt"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/movimientos" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/texto_corto_txt"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/editTextDate"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:hint="@string/Hora_txt"
+                android:text="@string/Hora_txt" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="@dimen/historial_dimention_txt"
+                android:layout_height="@dimen/historial_dimention_txt"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icons8_basura" />
+
+        </TableRow>
+
+    </TableLayout>
+    <ImageView
+        android:id="@+id/menubarbottom"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bgbar_main" />
+
+    <ImageButton
+        android:id="@+id/boton_perfil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#00FFFFFF"
+        android:onClick="in"
+        android:scaleType="fitCenter"
+        android:src="@drawable/usuario"
+        app:layout_constraintBottom_toBottomOf="@+id/menubarbottom"
+        app:layout_constraintEnd_toEndOf="@+id/menubarbottom"
+        app:layout_constraintStart_toEndOf="@+id/boton_inicio"
+        app:layout_constraintTop_toTopOf="@+id/menubarbottom"
+        app:tint="@color/white" />
+
+    <ImageButton
+        android:id="@+id/boton_movimiento"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#00FFFFFF"
+        android:onClick="mer"
+        android:scaleType="fitCenter"
+        android:src="@drawable/movimientos"
+        app:layout_constraintBottom_toBottomOf="@+id/menubarbottom"
+        app:layout_constraintEnd_toStartOf="@+id/boton_inicio"
+        app:layout_constraintStart_toStartOf="@+id/menubarbottom"
+        app:layout_constraintTop_toTopOf="@+id/menubarbottom"
+        app:tint="@color/white" />
+
+    <ImageButton
+        android:id="@+id/boton_inicio"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/menubarbottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/menubarbottom"
+        app:srcCompat="@drawable/hogar"
+        app:tint="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

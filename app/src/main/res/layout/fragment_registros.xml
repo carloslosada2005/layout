@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.theme.Mercancia">
+    tools:context=".Registros">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -15,8 +15,10 @@
             android:layout_width="0dp"
             android:layout_height="232dp"
             android:layout_gravity="center|top"
-            app:srcCompat="@drawable/agregar_archivo"
-            tools:layout_editor_absoluteX="2dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/agregar_archivo" />
 
         <FrameLayout
             android:id="@+id/frameLayout"
@@ -45,13 +47,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/frameLayout">
 
-            <TextView
+            <EditText
                 android:id="@+id/textView12"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|top"
                 android:gravity="center|top"
-                android:text="solo es una prueba, de lo que el contenido puede alamcernar dependiendo de la capacidad de la pantalla de cada dispositivo, de esta manera nada es final solo es una manera de representar el texto que puede contener cada cuadro de descripcion"
+                android:hint="@string/text_description"
                 android:textSize="20sp" />
         </FrameLayout>
 
@@ -86,7 +88,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/bgbar_main" />
+                    app:srcCompat="@drawable/profile_circle" />
 
                 <ImageButton
                     android:id="@+id/boton_perfil"
@@ -108,7 +110,7 @@
                     android:layout_height="50dp"
                     android:background="#00FFFFFF"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/movimientos"
+                    android:src="@drawable/salir"
                     app:layout_constraintBottom_toBottomOf="@+id/menubarbottom"
                     app:layout_constraintEnd_toStartOf="@+id/boton_inicio"
                     app:layout_constraintStart_toStartOf="@+id/menubarbottom"

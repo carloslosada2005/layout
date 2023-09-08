@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="moviles2023.layout.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_design_perfil2"
+            app:destination="@id/design_perfil2" />
+        <action
+            android:id="@+id/action_home2_to_registros"
+            app:destination="@id/registros" />
+        <action
+            android:id="@+id/action_home2_to_historial"
+            app:destination="@id/historial" />
+        <action
+            android:id="@+id/action_home2_to_facturas"
+            app:destination="@id/facturas" />
+    </fragment>
+    <fragment
+        android:id="@+id/design_perfil2"
+        android:name="moviles2023.layout.Design_perfil"
+        android:label="fragment_design_perfil"
+        tools:layout="@layout/fragment_design_perfil" >
+        <action
+            android:id="@+id/action_design_perfil2_to_home2"
+            app:destination="@id/home2" />
+        <action
+            android:id="@+id/action_design_perfil2_to_edicion_perfil"
+            app:destination="@id/edicion_perfil" />
+    </fragment>
+    <fragment
+        android:id="@+id/registros"
+        android:name="moviles2023.layout.Registros"
+        android:label="fragment_registros"
+        tools:layout="@layout/fragment_registros" >
+        <action
+            android:id="@+id/action_registros_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/edicion_perfil"
+        android:name="moviles2023.layout.ui.theme.Edicion_perfil"
+        android:label="fragment_edicion_perfil"
+        tools:layout="@layout/fragment_edicion_perfil" >
+        <action
+            android:id="@+id/action_edicion_perfil_to_design_perfil2"
+            app:destination="@id/design_perfil2" />
+    </fragment>
+    <fragment
+        android:id="@+id/historial"
+        android:name="moviles2023.layout.Historial"
+        android:label="fragment_historial"
+        tools:layout="@layout/fragment_historial" >
+        <action
+            android:id="@+id/action_historial_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/facturas"
+        android:name="moviles2023.layout.ui.theme.facturas"
+        android:label="fragment_facturas"
+        tools:layout="@layout/fragment_facturas" >
+        <action
+            android:id="@+id/action_facturas_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+</navigation>
