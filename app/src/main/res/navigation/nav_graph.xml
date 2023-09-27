@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/home2">
+    app:startDestination="@id/login">
 
     <fragment
         android:id="@+id/home2"
@@ -61,6 +61,9 @@
         <action
             android:id="@+id/action_historial_to_home2"
             app:destination="@id/home2" />
+        <action
+            android:id="@+id/action_historial_to_design_perfil2"
+            app:destination="@id/design_perfil2" />
     </fragment>
     <fragment
         android:id="@+id/facturas"
@@ -69,6 +72,15 @@
         tools:layout="@layout/fragment_facturas" >
         <action
             android:id="@+id/action_facturas_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="moviles2023.layout.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_home2"
             app:destination="@id/home2" />
     </fragment>
 </navigation>

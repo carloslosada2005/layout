@@ -3,7 +3,10 @@ package moviles2023.layout;
 import android.graphics.Color;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -55,35 +58,41 @@ public class Design_perfil extends Fragment {
         return fragment;
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-            perfil_edit=(Button) getView().findViewById(R.id.button_edit);
 
-            perfil_act= (RadioGroup) getView().findViewById(R.id.actividad);
-            imagen_perfil= (ImageButton) getView().findViewById(R.id.perfil);
-            perfil_act.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                    if(radioGroup.getCheckedRadioButtonId()==R.id.boton_activo){
-                        imagen_perfil.setBackgroundColor(Color.GREEN);
-                    } else if (radioGroup.getCheckedRadioButtonId()==R.id.boton_suspendido) {
-                        imagen_perfil.setBackgroundColor(Color.YELLOW);
-                    }else if (radioGroup.getCheckedRadioButtonId()==R.id.boton_ausente) {
-                        imagen_perfil.setBackgroundColor(Color.RED);
-                    }
-                }
-            });
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_design_perfil, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        perfil_edit=(Button) getView().findViewById(R.id.button_edit);
+
+        perfil_act= (RadioGroup) getView().findViewById(R.id.actividad);
+        imagen_perfil= (ImageButton) getView().findViewById(R.id.perfil);
+        perfil_act.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if(radioGroup.getCheckedRadioButtonId()==R.id.boton_activo){
+                    imagen_perfil.setBackgroundColor(Color.GREEN);
+                } else if (radioGroup.getCheckedRadioButtonId()==R.id.boton_suspendido) {
+                    imagen_perfil.setBackgroundColor(Color.YELLOW);
+                }else if (radioGroup.getCheckedRadioButtonId()==R.id.boton_ausente) {
+                    imagen_perfil.setBackgroundColor(Color.RED);
+                }
+            }
+        });
+
+        perfil_edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(getView()).navigate(R.id.edicion_perfil);
+            }
+        });
+
     }
 }

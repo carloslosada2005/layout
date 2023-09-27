@@ -410,7 +410,6 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="#00FFFFFF"
-        android:onClick="mer"
         android:scaleType="fitCenter"
         android:src="@drawable/movimientos"
         app:layout_constraintBottom_toBottomOf="@+id/menubarbottom"

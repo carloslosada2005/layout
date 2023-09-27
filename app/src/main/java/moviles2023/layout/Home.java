@@ -32,7 +32,7 @@ public class Home extends Fragment {
     CheckBox dinero;
     TextView cantidad;
 
-    ImageButton perfil, agregar, movimientos ;
+    ImageButton perfil, agregar, movimientos, factura ;
     public Home() {
         // Required empty public constructor
     }
@@ -59,6 +59,13 @@ public class Home extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_home, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
 
         // Configura las vistas aquí
         cantidad= (TextView) getView().findViewById(R.id.cantidad_main_txt);
@@ -66,6 +73,8 @@ public class Home extends Fragment {
         perfil= (ImageButton) getView().findViewById(R.id.boton_perfil);
         agregar= (ImageButton) getView().findViewById(R.id.agregar_icono);
         movimientos= (ImageButton) getView().findViewById(R.id.boton_movimiento);
+        factura= (ImageButton) getView().findViewById(R.id.facturas_icono);
+
         perfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -73,18 +82,24 @@ public class Home extends Fragment {
             }
         });
 
+        factura.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(getView()).navigate(R.id.facturas);
+            }
+        });
         agregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                //Navigation.findNavController(getView()).navigate(R.id.registros);
+                Navigation.findNavController(getView()).navigate(R.id.registros);
             }
         });
 
         movimientos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Navigation.findNavController(getView()).navigate(R.id.historial);
+                Navigation.findNavController(getView()).navigate(R.id.historial);
             }
         });
 
@@ -100,12 +115,6 @@ public class Home extends Fragment {
                 else {cantidad.setText(a);}
             }
         });
-        return inflater.inflate(R.layout.fragment_home, container, false);
-    }
-
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
 
     }
 }

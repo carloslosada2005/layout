@@ -30,4 +30,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="text_description">ingrese una descripcion corta del producto</string>
     <string name="texto_corto_txt">ingrese un texto corto</string>
+    <string name="Bienvenido" >Bienvenido</string>
+    <string name="Usuario">Usuario</string>
+    <string name="contrasena">contraseña</string>
+    <string name="Iniciar_sesion">Iniciar sesion</string>
+    <string name="Registrarse">Registrarse</string>
 </resources>

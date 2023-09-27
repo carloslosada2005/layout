@@ -2,6 +2,8 @@ package moviles2023.layout.ui.theme;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -54,9 +56,18 @@ public class Edicion_perfil extends Fragment {
 
     EditText nombre,apellido,correo,cargo,telefono,fecha;
     Button guardar;
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
 
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_edicion_perfil, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
         nombre = (EditText) getView().findViewById(R.id.nombre_editable);
         apellido = (EditText) getView().findViewById(R.id.apellido_editable);
         correo = (EditText) getView().findViewById(R.id.correo_editable);
@@ -76,19 +87,5 @@ public class Edicion_perfil extends Fragment {
 
             }
         });
-
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_edicion_perfil, container, false);
     }
 }
